@@ -5,7 +5,7 @@
     <link>https://bradleypallen.github.io/author/s-daniel-lee/</link>
       <atom:link href="https://bradleypallen.github.io/author/s-daniel-lee/index.xml" rel="self" type="application/rss+xml" />
     <description>S Daniel Lee</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020. All rights reserved.</copyright><lastBuildDate>Sun, 01 Dec 1996 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020. All rights reserved.</copyright><lastBuildDate>Tue, 03 Dec 1996 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://bradleypallen.github.io/images/icon_hu499d805f68efe20cdf114d33df455869_5455_512x512_fill_lanczos_center_2.png</url>
       <title>S Daniel Lee</title>
@@ -15,32 +15,8 @@
     <item>
       <title>Case-based reasoning system</title>
       <link>https://bradleypallen.github.io/publication/allen-1996-case/</link>
-      <pubDate>Sun, 01 Dec 1996 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Dec 1996 00:00:00 +0000</pubDate>
       <guid>https://bradleypallen.github.io/publication/allen-1996-case/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ART-Ada: An Ada-based expert system tool</title>
-      <link>https://bradleypallen.github.io/publication/lee-1991-art/</link>
-      <pubDate>Tue, 01 Jan 1991 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/lee-1991-art/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A knowledge-based environment for the development of software parts composition systems</title>
-      <link>https://bradleypallen.github.io/publication/allen-1989-knowledge/</link>
-      <pubDate>Sun, 01 Jan 1989 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-1989-knowledge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deploying expert systems in Ada</title>
-      <link>https://bradleypallen.github.io/publication/lee-1989-deploying/</link>
-      <pubDate>Sun, 01 Jan 1989 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/lee-1989-deploying/</guid>
       <description></description>
     </item>
     

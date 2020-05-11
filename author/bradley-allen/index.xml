@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bradley Allen | bradleypallen.org</title>
+    <link>https://bradleypallen.github.io/author/bradley-allen/</link>
+      <atom:link href="https://bradleypallen.github.io/author/bradley-allen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bradley Allen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020. All rights reserved.</copyright><lastBuildDate>Thu, 01 Jan 2004 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bradleypallen.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Bradley Allen</title>
+      <link>https://bradleypallen.github.io/author/bradley-allen/</link>
+    </image>
+    
+    <item>
+      <title>A Metadata Thesaurus: Report on the Knowledge Organization of the Dublin Core Metadata Initiative Conference Proceedings</title>
+      <link>https://bradleypallen.github.io/publication/allen-2017-metadata/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>https://bradleypallen.github.io/publication/allen-2017-metadata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selecting web site content to be displayed to a web site visitor based upon a probability distribution</title>
+      <link>https://bradleypallen.github.io/publication/allen-2001-selecting/</link>
+      <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
+      <guid>https://bradleypallen.github.io/publication/allen-2001-selecting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

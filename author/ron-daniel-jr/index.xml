@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ron Daniel Jr | bradleypallen.org</title>
+    <link>https://bradleypallen.github.io/author/ron-daniel-jr/</link>
+      <atom:link href="https://bradleypallen.github.io/author/ron-daniel-jr/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ron Daniel Jr</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020. All rights reserved.</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bradleypallen.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Ron Daniel Jr</title>
+      <link>https://bradleypallen.github.io/author/ron-daniel-jr/</link>
+    </image>
+    
+    <item>
+      <title>End-to-End Learning for Answering Structured Queries Directly over Text</title>
+      <link>https://bradleypallen.github.io/publication/groth-2018-end/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://bradleypallen.github.io/publication/groth-2018-end/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
     <link>https://bradleypallen.github.io/publication-type/1/</link>
       <atom:link href="https://bradleypallen.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020. All rights reserved.</copyright><lastBuildDate>Thu, 13 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020. All rights reserved.</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://bradleypallen.github.io/images/icon_hu499d805f68efe20cdf114d33df455869_5455_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
@@ -13,82 +13,10 @@
     </image>
     
     <item>
-      <title>The role of metadata in the second machine age</title>
-      <link>https://bradleypallen.github.io/publication/allen-2016-role/</link>
-      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-2016-role/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Applying Universal Schemas for Domain Specific Ontology Expansion</title>
       <link>https://bradleypallen.github.io/publication/groth-2016-applying/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       <guid>https://bradleypallen.github.io/publication/groth-2016-applying/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linked Data Standards and Infrastructure for Scientific Publishing</title>
-      <link>https://bradleypallen.github.io/publication/allen-2011-linked/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-2011-linked/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Semantic web techniques for searching and navigating video shots in BBC rushes</title>
-      <link>https://bradleypallen.github.io/publication/allen-2006-semantic/</link>
-      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-2006-semantic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Searching for relevant video shots in BBC rushes using semantic web techniques</title>
-      <link>https://bradleypallen.github.io/publication/allen-2005-searching/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-2005-searching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Building metadata-based navigation using semantic web standards: the Dublin Core 2003 conference proceedings</title>
-      <link>https://bradleypallen.github.io/publication/allen-2004-building/</link>
-      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-2004-building/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ART-Ada: An Ada-based expert system tool</title>
-      <link>https://bradleypallen.github.io/publication/lee-1991-art/</link>
-      <pubDate>Tue, 01 Jan 1991 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/lee-1991-art/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A knowledge-based environment for the development of software parts composition systems</title>
-      <link>https://bradleypallen.github.io/publication/allen-1989-knowledge/</link>
-      <pubDate>Sun, 01 Jan 1989 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-1989-knowledge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deploying expert systems in Ada</title>
-      <link>https://bradleypallen.github.io/publication/lee-1989-deploying/</link>
-      <pubDate>Sun, 01 Jan 1989 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/lee-1989-deploying/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Simplifying the Construction of Domain-Specific Automatic Programming Systems: The NASA Automated Software Development Workstation Project</title>
-      <link>https://bradleypallen.github.io/publication/allen-1987-simplifying/</link>
-      <pubDate>Thu, 01 Jan 1987 00:00:00 +0000</pubDate>
-      <guid>https://bradleypallen.github.io/publication/allen-1987-simplifying/</guid>
       <description></description>
     </item>
     

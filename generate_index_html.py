@@ -23,6 +23,15 @@ PREFIX = """
 		}
 	}
 </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X60V83RS7W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X60V83RS7W');
+</script>
 <article class="markdown-body">
 """
 SUFFIX = """

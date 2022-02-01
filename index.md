@@ -1,7 +1,7 @@
 # Bradley P. Allen
 [![Brad's Twitter page](https://img.shields.io/twitter/follow/bradleypallen?style=social)](https://twitter.com/bradleypallen/)
 [![Brad's Github page](https://img.shields.io/github/stars/bradleypallen?style=social)](https://github.com/bradleypallen/)
-[![Brad's Google Scholar page](https://img.shields.io/badge/citations-1108-lightgrey?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ)
+[![Brad's Google Scholar page](https://img.shields.io/badge/citations-1109-lightgrey?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ)
 
 | [![A YouTube video of Brad's CHM oral history](resources/images/chm_oral_history.png)](https://www.youtube.com/watch?v=2yKJ1CA9FYU) | Brad Allen is [**a technology executive and serial entrepreneur**](https://www.linkedin.com/in/bpallen) who is currently Chief Architect at Merit, a Bay Area startup building a verified identity platform. Previously, Brad was Chief Architect at Elsevier, and before that, founder/CTO at three startups in the Los Angeles area, achieving successful exits in two of the three. Brad began his career during the 1980s as [**one of the very first knowledge engineers of the expert systems era**](https://archive.computerhistory.org/resources/access/text/2020/04/102740341-05-01-acc.pdf), after earning a BS in Applied Mathematics at Carnegie Mellon University.  |
 | - | - |
@@ -10,4 +10,4 @@
 | [![The slides from Brad's LD4 talk](resources/images/ld4_2019_05_11.png)](https://docs.google.com/presentation/d/1-0JL3LL7-GbUQkbSHi8k6pQNlfv-3D5YAdwcZh-9auQ/edit?usp=sharing) | Brad's focus on these areas also has application to his personal interests as [**a book collector specializing in the works of William S. Burroughs**](https://wsburroughs.link/), the American Beat Generation author. In this talk at the 2019 LD4 Conference on Linked Data in Libraries, Brad describes his use of library linked open data standards to publish scholarly bibliographical data about his collection. |
 | [![Brad unmolding a timpano](resources/images/nye_dinner_2020_12_31.png)](https://twitter.com/bradleypallen/status/1344834635864231936) | Brad is at various other times [**an amateur astronomer, a mountaineer, and a home cook**](https://twitter.com/bradleypallen/status/1344834635864231936). Of late, there's been a bit more of the third of these activities than the other two. Here's Brad unmolding his version of a timpano, inspired (as so many others) by the one featured in Stanley Tucci's film "Big Night". |
 
-*Copyright &copy; 2021 Bradley P. Allen. All rights reserved.*
+*Copyright &copy; 2022 Bradley P. Allen. All rights reserved.*

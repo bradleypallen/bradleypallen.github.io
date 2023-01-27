@@ -1,5 +1,5 @@
 # Bradley P. Allen
-[![Brad's Twitter page](https://img.shields.io/twitter/follow/bradleypallen?style=social)](https://twitter.com/bradleypallen/)
+[![Brad's Twitter page](https://img.shields.io/badge/follow-%40bradleypallen-1DA1F2?logo=twitter&style=social)](https://twitter.com/bradleypallen/)
 [![Brad's Mastodon page](https://img.shields.io/badge/Mastodon-%40bradleypallen%40mas.to-blue?style=social&logo=mastodon)](https://mas.to/@bradleypallen)
 [![Brad's Github page](https://img.shields.io/github/stars/bradleypallen?style=social)](https://github.com/bradleypallen/)
 [![Brad's Google Scholar page](https://img.shields.io/badge/citations-1126-lightgrey?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ)

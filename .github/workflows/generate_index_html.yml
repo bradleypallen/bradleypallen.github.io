@@ -2,16 +2,19 @@ name: Generate index.html from index.md
 
 on:
   push:
-    branches: [ main ]  # Adjust this if your default branch has a different name
+    paths:
+      - 'index.md'  # Trigger the workflow only when index.md is modified
+    branches:
+      - main  # Adjust this if your default branch has a different name
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.x'
     
@@ -23,24 +26,23 @@ jobs:
     - name: Generate index.html
       run: python generate_index_html.py
     
-    - name: Setup Pages
-      uses: actions/configure-pages@v2
-    
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: '.'  # Upload the entire repository content
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add index.html
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update index.html" && git push)
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

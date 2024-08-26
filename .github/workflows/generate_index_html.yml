@@ -1,39 +1,46 @@
 name: Generate index.html from index.md
-on: push
+
+on:
+  push:
+    branches: [ main ]  # Adjust this if your default branch has a different name
+
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - uses: actions/checkout@v2
+    
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+    
     - name: Install dependencies
       run: |
-        dir
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Install dependencies
-      run: |
-        python generate_index_html.py
-        dir
-    - name: Commit files
-      id: commit
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "github-actions"
-        git add --all
-        if [-z "$(git status --porcelain)"]; then
-           echo "::set-output name=push::false"
-        else
-           git commit -m "Add changes" -a
-           echo "::set-output name=push::true"
-        fi
-      shell: bash
-    - name: Push changes
-      if: steps.commit.outputs.push == 'true'
-      uses: ad-m/github-push-action@master
+    
+    - name: Generate index.html
+      run: python generate_index_html.py
+    
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
+    
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
+        path: '.'  # Upload the entire repository content
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1

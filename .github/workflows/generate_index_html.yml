@@ -2,13 +2,31 @@ name: Generate index.html from index.md
 
 on:
   push:
-    paths:
-      - 'index.md'  # Trigger the workflow only when index.md is modified
     branches:
       - main  # Adjust this if your default branch has a different name
 
 jobs:
+  check_and_build:
+    runs-on: ubuntu-latest
+    outputs:
+      md_changed: ${{ steps.check_changes.outputs.md_changed }}
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+
+    - name: Check if index.md changed
+      id: check_changes
+      run: |
+        if git diff --name-only HEAD^ HEAD | grep -q "index.md"; then
+          echo "md_changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "md_changed=false" >> $GITHUB_OUTPUT
+        fi
+
   build:
+    needs: check_and_build
+    if: needs.check_and_build.outputs.md_changed == 'true'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -34,7 +52,8 @@ jobs:
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update index.html" && git push)
 
   deploy:
-    needs: build
+    needs: [check_and_build, build]
+    if: always() && (needs.check_and_build.outputs.md_changed == 'true' || needs.build.result == 'success')
     runs-on: ubuntu-latest
     permissions:
       pages: write

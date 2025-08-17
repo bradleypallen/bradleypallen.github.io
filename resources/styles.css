@@ -292,6 +292,7 @@ body {
 /* Mobile layout - floating images with text wrap */
 @media (max-width: 768px) {
   .markdown-body table,
+  .markdown-body table thead,
   .markdown-body table tbody {
     display: block;
     width: 100%;
@@ -301,20 +302,24 @@ body {
     display: block;
     width: 100%;
     position: relative;
-    margin-bottom: var(--space-8);
-    min-height: 120px; /* Ensure minimum height for floating */
+    margin-bottom: var(--space-4); /* Reduced from space-8 */
+    min-height: 100px; /* Reduced from 120px */
   }
   
-  .markdown-body table td:first-child {
+  /* Target both td and th for first column images */
+  .markdown-body table td:first-child,
+  .markdown-body table th:first-child {
     display: block;
     float: left;
-    width: 120px;
-    min-width: 120px;
-    margin: 0 var(--space-4) var(--space-3) 0;
+    width: 100px; /* Reduced from 120px */
+    min-width: 100px;
+    margin: 0 var(--space-3) var(--space-2) 0; /* Reduced margins */
     padding: 0;
   }
   
-  .markdown-body table td:last-child {
+  /* Target both td and th for content */
+  .markdown-body table td:last-child,
+  .markdown-body table th:last-child {
     display: block;
     padding: 0;
     overflow: hidden; /* Creates new block formatting context for text wrap */
@@ -353,8 +358,8 @@ body {
 /* Mobile image sizing */
 @media (max-width: 768px) {
   .markdown-body table img {
-    width: 120px;
-    height: 90px;
+    width: 100px;
+    height: 75px;
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: var(--border-radius-md);
@@ -375,11 +380,12 @@ body {
 /* Tighter section spacing on mobile */
 @media (max-width: 768px) {
   .markdown-body table tr {
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-3); /* Further reduced */
   }
   
   .markdown-body table tr:not(:last-child) {
-    padding-bottom: var(--space-6);
+    padding-bottom: var(--space-4); /* Reduced */
+    border-bottom: 1px solid var(--color-border-light); /* Lighter border */
   }
 }
 

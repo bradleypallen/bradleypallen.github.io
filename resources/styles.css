@@ -270,6 +270,8 @@ body {
   border: none;
   padding: var(--space-6);
   vertical-align: top;
+  font-weight: var(--font-weight-normal); /* Remove bold from th elements */
+  text-align: left; /* Ensure left alignment like td */
 }
 
 .markdown-body table tr {
@@ -302,8 +304,8 @@ body {
     display: block;
     width: 100%;
     position: relative;
-    margin-bottom: var(--space-2); /* Further reduced to 0.5rem */
-    min-height: 80px; /* Further reduced to 80px */
+    margin-bottom: var(--space-4); /* Increased back to 1rem for breathing room */
+    min-height: 90px; /* Increased to 90px */
   }
   
   /* Target both td and th for first column images */
@@ -380,11 +382,11 @@ body {
 /* Tighter section spacing on mobile */
 @media (max-width: 768px) {
   .markdown-body table tr {
-    margin-bottom: var(--space-1); /* Minimal spacing - 0.25rem */
+    margin-bottom: var(--space-3); /* Increased to 0.75rem for better spacing */
   }
   
   .markdown-body table tr:not(:last-child) {
-    padding-bottom: var(--space-2); /* Minimal padding - 0.5rem */
+    padding-bottom: var(--space-4); /* Increased to 1rem */
     border-bottom: 1px solid var(--color-border-light); /* Lighter border */
   }
 }

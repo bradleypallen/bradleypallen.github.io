@@ -9,3 +9,4 @@
 | [![Brad unmolding a timpano](resources/images/nye_dinner_2020_12_31.png)](https://twitter.com/bradleypallen/status/1344834635864231936) | I am at various other times [**an amateur astronomer, a mountaineer, and a home cook**](https://twitter.com/bradleypallen/status/1344834635864231936). Of late, there's been a bit more of the third of these activities than the other two. Here I am unmolding my version of a timpano, inspired (as so many others) by the one featured in Stanley Tucci's film "Big Night". |
 
 *Copyright &copy; 2025 Bradley P. Allen. All rights reserved.*
+ 

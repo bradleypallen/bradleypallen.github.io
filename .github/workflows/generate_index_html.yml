@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'index.md'
-      - 'generate_index_html.py'
-      - 'requirements.txt'
 
 permissions:
   contents: write

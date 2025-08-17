@@ -128,17 +128,17 @@ body {
   /* Tighter spacing on mobile */
   .markdown-body h1 {
     font-size: var(--font-size-3xl);
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-4); /* Reduced from space-6 */
   }
   
   .markdown-body p {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-2); /* Reduced from space-4 */
     font-size: var(--font-size-sm);
     line-height: var(--line-height-normal);
   }
   
   .markdown-body table {
-    margin: var(--space-6) 0;
+    margin: var(--space-3) 0; /* Reduced from space-6 */
   }
 }
 
@@ -302,8 +302,8 @@ body {
     display: block;
     width: 100%;
     position: relative;
-    margin-bottom: var(--space-4); /* Reduced from space-8 */
-    min-height: 100px; /* Reduced from 120px */
+    margin-bottom: var(--space-2); /* Further reduced to 0.5rem */
+    min-height: 80px; /* Further reduced to 80px */
   }
   
   /* Target both td and th for first column images */
@@ -311,9 +311,9 @@ body {
   .markdown-body table th:first-child {
     display: block;
     float: left;
-    width: 100px; /* Reduced from 120px */
-    min-width: 100px;
-    margin: 0 var(--space-3) var(--space-2) 0; /* Reduced margins */
+    width: 80px; /* Further reduced from 100px */
+    min-width: 80px;
+    margin: 0 var(--space-2) var(--space-1) 0; /* Minimal margins */
     padding: 0;
   }
   
@@ -358,11 +358,11 @@ body {
 /* Mobile image sizing */
 @media (max-width: 768px) {
   .markdown-body table img {
-    width: 100px;
-    height: 75px;
+    width: 80px;
+    height: 60px;
     aspect-ratio: 4/3;
     object-fit: cover;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-sm); /* Smaller radius for smaller images */
   }
 }
 
@@ -380,11 +380,11 @@ body {
 /* Tighter section spacing on mobile */
 @media (max-width: 768px) {
   .markdown-body table tr {
-    margin-bottom: var(--space-3); /* Further reduced */
+    margin-bottom: var(--space-1); /* Minimal spacing - 0.25rem */
   }
   
   .markdown-body table tr:not(:last-child) {
-    padding-bottom: var(--space-4); /* Reduced */
+    padding-bottom: var(--space-2); /* Minimal padding - 0.5rem */
     border-bottom: 1px solid var(--color-border-light); /* Lighter border */
   }
 }

@@ -124,6 +124,22 @@ body {
   .markdown-body {
     padding: var(--space-6) var(--space-4);
   }
+  
+  /* Tighter spacing on mobile */
+  .markdown-body h1 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-6);
+  }
+  
+  .markdown-body p {
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
+  }
+  
+  .markdown-body table {
+    margin: var(--space-6) 0;
+  }
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -224,6 +240,22 @@ body {
   align-items: center;
 }
 
+/* Tighter badge spacing on mobile */
+@media (max-width: 768px) {
+  .markdown-body p:has(img[src*="shields.io"]) {
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+    justify-content: center;
+  }
+  
+  .markdown-body p img[alt*="badge" i],
+  .markdown-body p img[src*="shields.io"],
+  .markdown-body p img[src*="badge"] {
+    margin: 0;
+    transform: scale(0.9);
+  }
+}
+
 /* ===== TABLES & CONTENT LAYOUT ===== */
 .markdown-body table {
   width: 100%;
@@ -245,35 +277,54 @@ body {
   border: none;
 }
 
-/* First column (images) */
-.markdown-body table td:first-child {
-  width: 200px;
-  min-width: 200px;
+/* Desktop layout - side by side */
+@media (min-width: 769px) {
+  .markdown-body table td:first-child {
+    width: 200px;
+    min-width: 200px;
+  }
+  
+  .markdown-body table td:last-child {
+    padding-left: var(--space-8);
+  }
 }
 
-/* Second column (content) */
-.markdown-body table td:last-child {
-  padding-left: var(--space-8);
-}
-
+/* Mobile layout - floating images with text wrap */
 @media (max-width: 768px) {
   .markdown-body table,
-  .markdown-body table tbody,
-  .markdown-body table tr,
-  .markdown-body table td {
+  .markdown-body table tbody {
     display: block;
     width: 100%;
   }
   
-  .markdown-body table td:first-child {
+  .markdown-body table tr {
+    display: block;
     width: 100%;
-    min-width: auto;
-    margin-bottom: var(--space-4);
-    text-align: center;
+    position: relative;
+    margin-bottom: var(--space-8);
+    min-height: 120px; /* Ensure minimum height for floating */
+  }
+  
+  .markdown-body table td:first-child {
+    display: block;
+    float: left;
+    width: 120px;
+    min-width: 120px;
+    margin: 0 var(--space-4) var(--space-3) 0;
+    padding: 0;
   }
   
   .markdown-body table td:last-child {
-    padding-left: 0;
+    display: block;
+    padding: 0;
+    overflow: hidden; /* Creates new block formatting context for text wrap */
+  }
+  
+  /* Ensure proper clearing after each section */
+  .markdown-body table tr::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -299,10 +350,14 @@ body {
   object-fit: cover;
 }
 
+/* Mobile image sizing */
 @media (max-width: 768px) {
   .markdown-body table img {
-    max-width: 300px;
-    margin: 0 auto;
+    width: 120px;
+    height: 90px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
   }
 }
 
@@ -315,6 +370,17 @@ body {
 .markdown-body table tr:not(:last-child) {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--space-12);
+}
+
+/* Tighter section spacing on mobile */
+@media (max-width: 768px) {
+  .markdown-body table tr {
+    margin-bottom: var(--space-6);
+  }
+  
+  .markdown-body table tr:not(:last-child) {
+    padding-bottom: var(--space-6);
+  }
 }
 
 /* ===== THEME TOGGLE ===== */

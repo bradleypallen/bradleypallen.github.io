@@ -280,15 +280,27 @@ body {
   border: none;
 }
 
-/* Add separator line between header and first body row */
-.markdown-body table thead tr {
+/* ===== UNIFIED TABLE ROW SPACING ===== */
+
+/* All table rows get identical spacing (header and body) */
+.markdown-body table tr:not(:last-of-type) {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--space-8);
   margin-bottom: var(--space-8);
 }
 
-/* Desktop layout - side by side */
+/* Only the very last row in the entire table gets no bottom spacing */
+.markdown-body table tr:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* ===== DESKTOP LAYOUT ===== */
 @media (min-width: 769px) {
+  .markdown-body table tr {
+    display: block;
+  }
+  
   .markdown-body table td:first-child,
   .markdown-body table th:first-child {
     width: 200px;
@@ -301,7 +313,7 @@ body {
   }
 }
 
-/* Mobile layout - floating images with text wrap */
+/* ===== MOBILE LAYOUT ===== */
 @media (max-width: 768px) {
   .markdown-body table,
   .markdown-body table thead,
@@ -314,7 +326,14 @@ body {
     display: block;
     width: 100%;
     position: relative;
-    min-height: 90px; /* Increased to 90px */
+    min-height: 90px;
+  }
+  
+  /* Override desktop spacing with mobile values - same structure, different values */
+  .markdown-body table tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
   }
   
   /* Target both td and th for first column images */
@@ -322,9 +341,9 @@ body {
   .markdown-body table th:first-child {
     display: block;
     float: left;
-    width: 80px; /* Further reduced from 100px */
+    width: 80px;
     min-width: 80px;
-    margin: 0 var(--space-2) var(--space-1) 0; /* Minimal margins */
+    margin: 0 var(--space-2) var(--space-1) 0;
     padding: 0;
   }
   
@@ -333,7 +352,7 @@ body {
   .markdown-body table th:last-child {
     display: block;
     padding: 0;
-    overflow: hidden; /* Creates new block formatting context for text wrap */
+    overflow: hidden;
   }
   
   /* Ensure proper clearing after each section */
@@ -373,39 +392,7 @@ body {
     height: 60px;
     aspect-ratio: 4/3;
     object-fit: cover;
-    border-radius: var(--border-radius-sm); /* Smaller radius for smaller images */
-  }
-}
-
-/* ===== CONTENT SECTIONS ===== */
-.markdown-body table tr {
-  display: block;
-}
-
-.markdown-body table tr:not(:last-child) {
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--space-8);
-  margin-bottom: var(--space-8);
-}
-
-/* Explicitly remove padding/margin from last body row */
-.markdown-body table tbody tr:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-/* Tighter section spacing on mobile */
-@media (max-width: 768px) {
-  .markdown-body table tr:not(:last-child) {
-    padding-bottom: var(--space-4); /* Increased to 1rem */
-    margin-bottom: var(--space-3); /* Only apply to non-last rows */
-    border-bottom: 1px solid var(--color-border-light); /* Lighter border */
-  }
-  
-  /* Explicitly remove padding from last body row */
-  .markdown-body table tbody tr:last-child {
-    padding-bottom: 0;
-    margin-bottom: 0;
+    border-radius: var(--border-radius-sm);
   }
 }
 

@@ -50,3 +50,4 @@ The only dependency is `requests==2.25.1` for making API calls to GitHub.
 3. Commit and push changes - GitHub Pages will automatically deploy
 
 The generated `index.html` should be committed to the repository as it's what GitHub Pages serves.
+- Always do a pull from GitHub before doing a commit and push, as GitHub Actions make changes when deployments occur.

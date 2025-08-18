@@ -314,7 +314,6 @@ body {
     display: block;
     width: 100%;
     position: relative;
-    margin-bottom: var(--space-4); /* Increased back to 1rem for breathing room */
     min-height: 90px; /* Increased to 90px */
   }
   

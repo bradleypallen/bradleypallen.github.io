@@ -139,7 +139,7 @@ body {
   }
   
   .markdown-body table {
-    margin: var(--space-3) 0; /* Reduced from space-6 */
+    margin: 0;
   }
 }
 
@@ -261,7 +261,7 @@ body {
 .markdown-body table {
   width: 100%;
   border-collapse: collapse;
-  margin: var(--space-8) 0;
+  margin: 0;
   background: transparent;
   border: none;
 }
@@ -427,7 +427,7 @@ body {
 
 /* ===== FOOTER ===== */
 .markdown-body p:last-child {
-  margin-top: var(--space-8);
+  margin: 0;
   text-align: center;
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);

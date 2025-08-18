@@ -10,7 +10,8 @@
 ## Recent Publications
 | Year | Publication |
 | - | - |
-| 2024 | [Title of paper](link-to-paper) - *Journal Name* |
+| 2024 | - [Title of paper](link-to-paper) - *Journal Name*
+- [Title of paper](link-to-paper) - *Journal Name* |
 | 2023 | [Another paper title](link) - *Conference/Journal* |
 
 *Copyright &copy; 2025 Bradley P. Allen. All rights reserved.*

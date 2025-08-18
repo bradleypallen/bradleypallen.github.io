@@ -11,7 +11,7 @@ PREFIX = """
 <link rel="stylesheet" href="resources/styles.css">
 <style>
 * {
-  font-family: 'Courier New', monospace !important;
+  font-family: 'Comic Sans MS', cursive !important;
   color: red !important;
 }
 </style>

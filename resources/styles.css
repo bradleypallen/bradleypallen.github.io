@@ -282,7 +282,7 @@ body {
 
 /* Add separator line between header and first body row */
 .markdown-body table thead tr {
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--space-4);
   margin-bottom: var(--space-4);
 }

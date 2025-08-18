@@ -64,26 +64,29 @@ function toggleTheme() {
 </script>
 """
 
-def generate_index_html():
-	import os
-	headers = { "Accept": "application/vnd.github.v3+json" }
-	
-	# Use GitHub token if available (for GitHub Actions)
-	github_token = os.environ.get('GITHUB_TOKEN')
-	if github_token:
-		headers['Authorization'] = f'token {github_token}'
-	
-	markdown = Path("index.md").read_text()
-	data = dumps({ 'text': markdown })
-	response = post('https://api.github.com/markdown', headers=headers, data=data)
-	
-	if response.status_code != 200:
-		print(f"GitHub API Error: {response.status_code}")
-		print(response.text)
-		exit(1)
-	
-	html = f'{PREFIX}\n{response.text}\n{SUFFIX}'
-	Path("index.html").write_text(html)
 
-if __name__ == '__main__':
+def generate_index_html():
+    import os
+
+    headers = {"Accept": "application/vnd.github.v3+json"}
+
+    # Use GitHub token if available (for GitHub Actions)
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if github_token:
+        headers["Authorization"] = f"token {github_token}"
+
+    markdown = Path("index.md").read_text()
+    data = dumps({"text": markdown})
+    response = post("https://api.github.com/markdown", headers=headers, data=data)
+
+    if response.status_code != 200:
+        print(f"GitHub API Error: {response.status_code}")
+        print(response.text)
+        exit(1)
+
+    html = f"{PREFIX}\n{response.text}\n{SUFFIX}"
+    Path("index.html").write_text(html)
+
+
+if __name__ == "__main__":
     generate_index_html()

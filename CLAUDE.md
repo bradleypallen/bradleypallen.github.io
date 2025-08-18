@@ -46,8 +46,18 @@ The only dependency is `requests==2.25.1` for making API calls to GitHub.
 ## Development Workflow
 
 1. Edit content in `index.md`
-2. Run `python generate_index_html.py` to update `index.html`
-3. Commit and push changes - GitHub Pages will automatically deploy
+2. Commit and push `index.md` changes
+3. GitHub Actions automatically runs `generate_index_html.py` to update `index.html`
+4. GitHub Actions commits the updated `index.html` and deploys to GitHub Pages
 
-The generated `index.html` should be committed to the repository as it's what GitHub Pages serves.
+The generated `index.html` is automatically committed by GitHub Actions and should not be edited manually.
 - Always do a pull from GitHub before doing a commit and push, as GitHub Actions make changes when deployments occur.
+
+## GitHub Actions Automation
+
+The repository uses GitHub Actions to automate the build and deployment process:
+
+- **Trigger**: Any push to the `master` branch
+- **Process**: Automatically runs `generate_index_html.py` to convert `index.md` to `index.html`
+- **Deployment**: Commits the updated HTML and deploys to GitHub Pages
+- **Manual generation**: You can still run `python generate_index_html.py` locally for testing, but it's not required for deployment

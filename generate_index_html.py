@@ -5,7 +5,9 @@ from requests import post
 from json import dumps
 from pathlib import Path
 
-PREFIX = """
+PREFIX = """<!DOCTYPE html>
+<html data-theme="light">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -19,6 +21,8 @@ PREFIX = """
 
   gtag('config', 'G-X60V83RS7W');
 </script>
+</head>
+<body>
 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
   <span id="theme-icon">🌙</span>
 </button>
@@ -62,6 +66,8 @@ function toggleTheme() {
   });
 })();
 </script>
+</body>
+</html>
 """
 
 

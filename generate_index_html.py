@@ -11,7 +11,8 @@ PREFIX = """
 <link rel="stylesheet" href="resources/styles.css">
 <style>
 * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
+  font-family: 'Courier New', monospace !important;
+  color: red !important;
 }
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->

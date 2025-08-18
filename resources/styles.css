@@ -289,12 +289,6 @@ body {
   margin-bottom: var(--space-8);
 }
 
-/* Remove bottom margin from thead and tbody tr elements */
-.markdown-body table thead tr,
-.markdown-body table tbody tr {
-  margin-bottom: 0;
-}
-
 /* Hide any empty rows completely */
 .markdown-body table tr:empty {
   display: none;
@@ -339,12 +333,6 @@ body {
     border-bottom: 1px solid var(--color-border-light);
     padding-bottom: var(--space-4);
     margin-bottom: var(--space-3);
-  }
-  
-  /* Remove bottom margin from thead and tbody tr elements on mobile too */
-  .markdown-body table thead tr,
-  .markdown-body table tbody tr {
-    margin-bottom: 0;
   }
   
   /* Target both td and th for first column images */

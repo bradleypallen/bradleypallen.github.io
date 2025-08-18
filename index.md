@@ -7,12 +7,6 @@
 | [![Elena Simperl's tweet of Brad's Dagstuhl Seminar invited talk](resources/images/dagstuhl_2022_09_12.png)](https://twitter.com/esimperl/status/1569235210079977473) |  My research at INDE lab explores [**knowledge engineering using large language models**](https://drops.dagstuhl.de/storage/08tgdk/tgdk-vol001/tgdk-vol001-issue001/TGDK.1.1.3/TGDK.1.1.3.pdf). A specific focus has been on [**the application of LLMs as cognitive tools for the philosophical practice of conceptual engineering**](https://philpapers.org/rec/ALLCEU) and how that provides insights towards framing a foundation for hybrid intelligence in the twenty-first century. | 
 | [![A YouTube video of Brad's September 2020 talk for the Harvard Data Science Initiative](resources/images/hdsi-industry-seminar-2020-09-15.png)](https://www.youtube.com/watch?v=cK3yKFhDyxs) | A major part of my commercial work was as [**an architect of data platforms for business transformation**](https://www.youtube.com/watch?v=cK3yKFhDyxs). In this presentation to the Harvard Data Science Initiative in September 2020, I discuss data science in practice at Elsevier, detailing the business motivations, the organization, and how data science over scientific content and data led to the delivery of new products to Elsevier's customers. |
 | [![Brad unmolding a timpano](resources/images/nye_dinner_2020_12_31.png)](https://twitter.com/bradleypallen/status/1344834635864231936) | I am at various other times an amateur astronomer, a mountaineer, and a home cook. Of late, there's been a bit more of the third of these activities than the other two. Here I am unmolding my version of a timpano, inspired (as so many others) by the one featured in Stanley Tucci's film "Big Night". |
-## Recent Publications
-| Year | Publication |
-| - | - |
-| 2024 | - [Title of paper](link-to-paper) - *Journal Name*
-- [Title of paper](link-to-paper) - *Journal Name* |
-| 2023 | [Another paper title](link) - *Conference/Journal* |
 
 *Copyright &copy; 2025 Bradley P. Allen. All rights reserved.*
  

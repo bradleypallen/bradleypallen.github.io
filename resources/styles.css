@@ -282,8 +282,8 @@ body {
 
 /* ===== UNIFIED TABLE ROW SPACING ===== */
 
-/* All table rows get identical spacing and bottom border */
-.markdown-body table tr {
+/* Only rows with content get spacing and bottom border */
+.markdown-body table tr:has(td, th) {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--space-8);
   margin-bottom: var(--space-8);
@@ -324,7 +324,7 @@ body {
   }
   
   /* Override desktop spacing with mobile values - same structure, different values */
-  .markdown-body table tr {
+  .markdown-body table tr:has(td, th) {
     border-bottom: 1px solid var(--color-border-light);
     padding-bottom: var(--space-4);
     margin-bottom: var(--space-3);

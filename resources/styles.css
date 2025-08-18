@@ -391,12 +391,9 @@ body {
 
 /* Tighter section spacing on mobile */
 @media (max-width: 768px) {
-  .markdown-body table tr {
-    margin-bottom: var(--space-3); /* Increased to 0.75rem for better spacing */
-  }
-  
   .markdown-body table tr:not(:last-child) {
     padding-bottom: var(--space-4); /* Increased to 1rem */
+    margin-bottom: var(--space-3); /* Only apply to non-last rows */
     border-bottom: 1px solid var(--color-border-light); /* Lighter border */
   }
 }

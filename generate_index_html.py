@@ -8,6 +8,7 @@ from pathlib import Path
 PREFIX = """
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="resources/styles.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X60V83RS7W"></script>

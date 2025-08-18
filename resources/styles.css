@@ -282,11 +282,16 @@ body {
 
 /* ===== UNIFIED TABLE ROW SPACING ===== */
 
-/* Only rows with content get spacing and bottom border */
-.markdown-body table tr:has(td, th) {
+/* All table rows get spacing and bottom border, but hide any empty ones */
+.markdown-body table tr {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--space-8);
   margin-bottom: var(--space-8);
+}
+
+/* Hide any empty rows completely */
+.markdown-body table tr:empty {
+  display: none;
 }
 
 /* ===== DESKTOP LAYOUT ===== */
@@ -324,7 +329,7 @@ body {
   }
   
   /* Override desktop spacing with mobile values - same structure, different values */
-  .markdown-body table tr:has(td, th) {
+  .markdown-body table tr {
     border-bottom: 1px solid var(--color-border-light);
     padding-bottom: var(--space-4);
     margin-bottom: var(--space-3);

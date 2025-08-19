@@ -324,7 +324,6 @@ body {
     display: block;
     width: 100%;
     position: relative;
-    min-height: 90px;
   }
   
   /* Override desktop spacing with mobile values - same structure, different values */

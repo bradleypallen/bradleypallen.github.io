@@ -302,8 +302,8 @@ body {
   
   .markdown-body table td:first-child,
   .markdown-body table th:first-child {
-    width: 200px;
-    min-width: 200px;
+    width: 240px;
+    min-width: 240px;
   }
   
   .markdown-body table td:last-child,

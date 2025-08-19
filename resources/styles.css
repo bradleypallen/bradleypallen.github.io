@@ -340,7 +340,7 @@ body {
     float: left;
     width: 80px;
     min-width: 80px;
-    margin: 0 var(--space-2) var(--space-1) 0;
+    margin: 0 var(--space-3) var(--space-1) 0;
     padding: 0;
   }
   

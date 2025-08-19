@@ -329,8 +329,8 @@ body {
   /* Override desktop spacing with mobile values - same structure, different values */
   .markdown-body table tr {
     border-bottom: 1px solid var(--color-border-light);
-    padding-bottom: var(--space-3);
-    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-5);
+    margin-bottom: var(--space-5);
   }
   
   /* Target both td and th for first column images */

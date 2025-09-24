@@ -38,7 +38,7 @@ jobs:
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
         if [ -n "$(git status --porcelain)" ]; then
           git add index.html
-          git commit -m "Auto-update index.html from index.md"
+          git commit -m "Auto-update index.html from index.md [skip ci]"
           git push
         else
           echo "No changes to commit"

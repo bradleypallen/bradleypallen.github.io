@@ -11,10 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Wait for any in-progress deployments to complete
-    concurrency:
-      group: pages
-      cancel-in-progress: false
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -43,6 +39,8 @@ jobs:
         if [ -n "$(git status --porcelain)" ]; then
           git add index.html
           git commit -m "Auto-update index.html from index.md"
+          # Wait for initial Pages deployment to start
+          sleep 30
           git push
         else
           echo "No changes to commit"

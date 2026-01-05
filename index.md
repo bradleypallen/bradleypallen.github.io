@@ -8,5 +8,5 @@
 | [![A YouTube video of Brad's 15 September 2020 talk for the Harvard Data Science Initiative](resources/images/hdsi-industry-seminar-2020-09-15.png)](https://www.youtube.com/watch?v=cK3yKFhDyxs) | A major part of my commercial work was as [**an architect of data platforms for business transformation**](https://www.youtube.com/watch?v=cK3yKFhDyxs). In this presentation to the Harvard Data Science Initiative on 15 September 2020, I discuss data science in practice at Elsevier, detailing how data science transformed our approach to scientific content and led to the delivery of new products to Elsevier's customers. |
 | [![Brad unmolding a timpano](resources/images/nye_dinner_2020_12_31.png)](https://youtu.be/AoupoSOtZs8?feature=shared) | I am at other times an amateur astronomer, a mountaineer, and a home cook. Of late, there's been a bit more of the third of these activities than the other two. Here I am unmolding my version of a timpano, inspired (as so many others) by the one featured in Stanley Tucci's film "Big Night". |
 
-*Copyright &copy; 2025 Bradley P. Allen. All rights reserved.*
+*Copyright &copy; 2026 Bradley P. Allen. All rights reserved.*
  

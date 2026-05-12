@@ -1,6 +1,6 @@
 # Bradley P. Allen
 [![Brad's LinkedIn page](https://img.shields.io/badge/LinkedIn-bpallen-blue)](https://www.linkedin.com/in/bpallen)
-[![Brad's Google Scholar page](https://img.shields.io/badge/citations-1328-lightgrey?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ)
+[![Brad's Google Scholar page](https://img.shields.io/badge/citations-1330-lightgrey?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ)
 [![Brad's Github page](https://img.shields.io/github/stars/bradleypallen?style=social)](https://github.com/bradleypallen/)
 | [![A YouTube video of Brad's Computer History Museum oral history](resources/images/chm_oral_history.png)](https://www.youtube.com/watch?v=2yKJ1CA9FYU) | I'm [**a retired technology executive and serial entrepreneur**](https://www.linkedin.com/in/bpallen) who is currently [**a guest researcher in the University of Amsterdam's Intelligent Data Engineering Lab**](https://indelab.org/), where I received my PhD in Computer Science in April 2026. Previously, I was Chief Architect at Elsevier, and before that, founder/CTO at three startups in the Los Angeles area, achieving successful exits in two of the three. I began my career during the 1980s as [**one of the first knowledge engineers of the expert systems era**](https://archive.computerhistory.org/resources/access/text/2020/04/102740341-05-01-acc.pdf), after earning a BS in Applied Mathematics/Computer Science at Carnegie Mellon University.  |
 | - | - |

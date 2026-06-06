@@ -1,465 +1,189 @@
-/* Modern Personal Website Styles */
+/* Academic personal site — clean, single light theme.
+   Layout is driven entirely by the element structure GitHub's Markdown API
+   generates from index.md (h1/h2 wrapped in .markdown-heading, p, ul/li, img, a, hr),
+   since that API strips class/id/style and most raw HTML. Keep index.md pure Markdown. */
 
-/* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-  /* Colors */
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-secondary: #64748b;
-  --color-accent: #0ea5e9;
-  
-  /* Light mode colors */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #475569;
-  --color-text-muted: #64748b;
-  --color-border: #e2e8f0;
-  --color-border-light: #f1f5f9;
-  
-  /* Typography */
-  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-  
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
-  
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  
-  --line-height-tight: 1.25;
-  --line-height-snug: 1.375;
-  --line-height-normal: 1.5;
-  --line-height-relaxed: 1.625;
-  
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
-  --space-24: 6rem;
-  
-  /* Layout */
-  --content-max-width: 768px;
-  --border-radius-sm: 0.25rem;
-  --border-radius-md: 0.375rem;
-  --border-radius-lg: 0.5rem;
-  --border-radius-xl: 0.75rem;
-  
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-normal: 200ms ease;
-  --transition-slow: 300ms ease;
+  --max-width: 720px;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --faint: #767676;
+  --accent: #1a4d8f;
+  --accent-hover: #0f3567;
+  --rule: #e2e2e2;
+  --bg: #ffffff;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Dark mode colors */
-[data-theme="dark"] {
-  --color-bg-primary: #0f172a;
-  --color-bg-secondary: #1e293b;
-  --color-bg-tertiary: #334155;
-  --color-text-primary: #f8fafc;
-  --color-text-secondary: #cbd5e1;
-  --color-text-muted: #94a3b8;
-  --color-border: #334155;
-  --color-border-light: #475569;
-}
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
 
-/* ===== CSS RESET & BASE ===== */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
+html { font-size: 17px; }
 
 body {
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-normal);
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-primary);
-  transition: background-color var(--transition-normal), color var(--transition-normal);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-
-/* ===== LAYOUT ===== */
+/* ===== Layout ===== */
 .markdown-body {
-  max-width: var(--content-max-width);
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-8) var(--space-6);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding: 4rem 1.5rem 5rem;
 }
 
-@media (max-width: 768px) {
-  .markdown-body {
-    padding: var(--space-6) var(--space-4);
-  }
-  
-  /* Tighter spacing on mobile */
-  .markdown-body h1 {
-    font-size: var(--font-size-3xl);
-    margin-bottom: var(--space-4); /* Reduced from space-6 */
-  }
-  
-  .markdown-body p {
-    margin-bottom: var(--space-2); /* Reduced from space-4 */
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-normal);
-  }
-  
-  .markdown-body table {
-    margin: 0;
-  }
-}
-
-/* ===== TYPOGRAPHY ===== */
+/* ===== Headings ===== */
 .markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-  color: var(--color-text-primary);
-  margin: 0 0 var(--space-6) 0;
+.markdown-body h2 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
 }
 
 .markdown-body h1 {
-  font-size: var(--font-size-4xl);
-  margin-bottom: var(--space-8);
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
 }
 
 .markdown-body h2 {
-  font-size: var(--font-size-3xl);
+  font-size: 1.3rem;
+  margin: 2.75rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+  clear: both; /* never let the floated headshot intrude on a section */
 }
 
-.markdown-body h3 {
-  font-size: var(--font-size-2xl);
-}
+/* GitHub wraps each heading in a div with an anchor link — hide the anchor. */
+.markdown-body .anchor { display: none; }
 
-.markdown-body h4 {
-  font-size: var(--font-size-xl);
-}
-
-.markdown-body h5 {
-  font-size: var(--font-size-lg);
-}
-
-.markdown-body h6 {
-  font-size: var(--font-size-base);
-}
-
+/* ===== Body text ===== */
 .markdown-body p {
-  color: var(--color-text-secondary);
-  line-height: var(--line-height-relaxed);
-  margin-bottom: var(--space-6);
+  margin-bottom: 1rem;
 }
 
-.markdown-body strong {
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-primary);
-}
+.markdown-body strong { font-weight: 600; color: var(--text); }
+.markdown-body em { font-style: italic; color: var(--muted); }
 
-.markdown-body em {
-  color: var(--color-text-muted);
-  font-style: italic;
-}
-
-/* ===== LINKS ===== */
+/* ===== Links ===== */
 .markdown-body a {
-  color: var(--color-primary);
+  color: var(--accent);
   text-decoration: none;
-  transition: color var(--transition-fast);
-  font-weight: var(--font-weight-medium);
 }
-
 .markdown-body a:hover {
-  color: var(--color-primary-dark);
+  color: var(--accent-hover);
   text-decoration: underline;
-  text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
 
-/* Remove anchor styling */
-.markdown-body .anchor {
-  display: none;
+/* ===== Header: headshot + name + affiliation + link row ===== */
+
+/* Leading image (first element) = headshot, floated beside the name. */
+.markdown-body > p:first-child {
+  float: right;
+  margin: 0.25rem 0 1rem 1.75rem;
+}
+.markdown-body > p:first-child img {
+  display: block;
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
 }
 
-/* ===== BADGES ===== */
-.markdown-body p img[alt*="badge" i],
-.markdown-body p img[src*="shields.io"],
-.markdown-body p img[src*="badge"] {
-  border-radius: var(--border-radius-md);
-  transition: transform var(--transition-fast);
-  margin: 0 var(--space-1);
+/* Affiliation line: the paragraph right after the H1 heading block. */
+.markdown-body .markdown-heading:has(h1) + p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
 }
 
-.markdown-body p img[alt*="badge" i]:hover,
-.markdown-body p img[src*="shields.io"]:hover,
-.markdown-body p img[src*="badge"]:hover {
-  transform: translateY(-1px);
+/* Link row: the paragraph after the affiliation line. */
+.markdown-body .markdown-heading:has(h1) + p + p {
+  font-size: 0.95rem;
+  color: var(--faint);
+  line-height: 1.9;
+  margin-bottom: 0.5rem;
 }
 
-/* Badge container */
-.markdown-body p:has(img[src*="shields.io"]) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-bottom: var(--space-8);
-  align-items: center;
+/* ===== Publications / Talks lists ===== */
+.markdown-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+.markdown-body li {
+  margin-bottom: 0.85rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem; /* hanging indent for wrapped citation lines */
 }
 
-/* Tighter badge spacing on mobile */
-@media (max-width: 768px) {
-  .markdown-body p:has(img[src*="shields.io"]) {
-    gap: var(--space-1);
-    margin-bottom: var(--space-4);
-    justify-content: center;
-  }
-  
-  .markdown-body p img[alt*="badge" i],
-  .markdown-body p img[src*="shields.io"],
-  .markdown-body p img[src*="badge"] {
-    margin: 0;
-  }
+/* "Full list on Google Scholar →" and citation-stats line sit quietly. */
+.markdown-body ul + p {
+  margin-top: 1rem;
 }
 
-/* ===== TABLES & CONTENT LAYOUT ===== */
-.markdown-body table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0;
-  background: transparent;
-  border: none;
+/* List items that carry a thumbnail (Talks & Media): float the thumbnail left and
+   let the title/description/links wrap beside it. (Flexbox can't be used here — GitHub
+   strips wrapper tags, so the inline title/text/links would each become separate flex
+   items.) Publication items have no image and keep the hanging-indent rule above. */
+.markdown-body li:has(img) {
+  padding-left: 0;
+  text-indent: 0;
+  margin-bottom: 1.5rem;
+  overflow: hidden; /* contain the float so the row grows to the image height */
+}
+.markdown-body li:has(img) > a:first-child,
+.markdown-body li:has(img) > img:first-child {
+  float: left;
+  margin: 0.15rem 1rem 0 0;
+  line-height: 0;
+}
+.markdown-body li img {
+  display: block;
+  width: 150px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
-.markdown-body table td,
-.markdown-body table th {
-  border: none;
-  padding: var(--space-6);
-  vertical-align: top;
-  font-weight: var(--font-weight-normal); /* Remove bold from th elements */
-  text-align: left; /* Ensure left alignment like td */
-}
-
-.markdown-body table tr {
-  background: transparent;
-  border: none;
-}
-
-/* ===== UNIFIED TABLE ROW SPACING ===== */
-
-/* All table rows get spacing and bottom border, but hide any empty ones */
-.markdown-body table tr {
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--space-4);
-  margin-bottom: var(--space-4);
-}
-
-/* Hide any empty rows completely */
-.markdown-body table tr:empty {
-  display: none;
-}
-
-/* ===== DESKTOP LAYOUT ===== */
-@media (min-width: 769px) {
-  .markdown-body table tr {
-    display: block;
-  }
-  
-  .markdown-body table td:first-child,
-  .markdown-body table th:first-child {
-    width: 240px;
-    min-width: 240px;
-  }
-  
-  .markdown-body table td:last-child,
-  .markdown-body table th:last-child {
-    padding-left: var(--space-8);
-  }
-}
-
-/* ===== MOBILE LAYOUT ===== */
-@media (max-width: 768px) {
-  .markdown-body table,
-  .markdown-body table thead,
-  .markdown-body table tbody {
-    display: block;
-    width: 100%;
-  }
-  
-  .markdown-body table tr {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-  
-  /* Override desktop spacing with mobile values - same structure, different values */
-  .markdown-body table tr {
-    border-bottom: 1px solid var(--color-border-light);
-    padding-bottom: var(--space-5);
-    margin-bottom: var(--space-5);
-  }
-  
-  /* Target both td and th for first column images */
-  .markdown-body table td:first-child,
-  .markdown-body table th:first-child {
-    display: block;
-    float: left;
-    width: 80px;
-    min-width: 80px;
-    margin: 0 var(--space-4) var(--space-1) 0;
-    padding: 0;
-  }
-  
-  /* Target both td and th for content */
-  .markdown-body table td:last-child,
-  .markdown-body table th:last-child {
-    display: block;
-    padding: 0;
-    overflow: hidden;
-    word-wrap: break-word;
-    min-width: 0;
-  }
-  
-  /* Ensure proper clearing after each section */
-  .markdown-body table tr::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-/* ===== IMAGES ===== */
+/* ===== Images (in body, e.g. future thumbnails) ===== */
 .markdown-body img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
-.markdown-body img:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Content images in table */
-.markdown-body table img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
-
-/* Mobile image sizing */
-@media (max-width: 768px) {
-  .markdown-body table img {
-    width: 80px;
-    height: 60px;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: var(--border-radius-sm);
-  }
-}
-
-/* ===== THEME TOGGLE ===== */
-.theme-toggle {
-  position: fixed;
-  top: var(--space-6);
-  right: var(--space-6);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid var(--color-border);
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-md);
-  z-index: 1000;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.1);
-  box-shadow: var(--shadow-lg);
-}
-
-.theme-toggle:focus {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-/* ===== FOOTER ===== */
-.markdown-body p:last-child {
-  margin: 0;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  border-top: none;
-  padding-top: 0;
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.markdown-body {
-  animation: fadeIn 0.6s ease-out;
-}
-
-/* ===== UTILITIES ===== */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+/* ===== Footer ===== */
+.markdown-body hr {
   border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0 1.25rem;
+}
+.markdown-body hr + p {
+  font-size: 0.85rem;
+  color: var(--faint);
+  margin-bottom: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  html { font-size: 16px; }
+
+  .markdown-body { padding: 2.5rem 1.25rem 3.5rem; }
+
+  /* Stack the headshot above the name instead of floating it. */
+  .markdown-body > p:first-child {
+    float: none;
+    margin: 0 0 1.25rem;
+  }
+  .markdown-body > p:first-child img {
+    width: 120px;
+  }
+
+  .markdown-body h1 { font-size: 1.7rem; }
+  .markdown-body h2 { font-size: 1.2rem; }
+
+  .markdown-body li:has(img) { gap: 0.75rem; }
+  .markdown-body li img { width: 104px; }
 }

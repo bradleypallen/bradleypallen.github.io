@@ -1,5 +1,3 @@
-![Bradley P. Allen](resources/images/headshot.jpg)
-
 # Bradley P. Allen
 
 Researcher, Intelligent Data Engineering Lab (INDE Lab), University of Amsterdam

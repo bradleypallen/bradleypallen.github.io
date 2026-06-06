@@ -7,7 +7,7 @@
   --max-width: 720px;
   --text: #1a1a1a;
   --muted: #5a5a5a;
-  --faint: #767676;
+  --faint: #6a6a6a;
   --accent: #1a4d8f;
   --accent-hover: #0f3567;
   --rule: #e2e2e2;
@@ -81,15 +81,18 @@ body {
 
 /* ===== Header: headshot + name + affiliation + link row ===== */
 
-/* Leading image (first element) = headshot, floated beside the name. */
-.markdown-body > p:first-child {
-  float: right;
-  margin: 0.25rem 0 1rem 1.75rem;
-}
-.markdown-body > p:first-child img {
+/* Headshot is rendered as a decorative CSS background on the H1 heading block, not an
+   <img>. GitHub auto-wraps every inline image in a self-link; using a background avoids
+   that spurious link, and it's accessibility-appropriate as a decorative image since the
+   name is carried by the adjacent <h1>. Floated beside the name. */
+.markdown-body .markdown-heading:has(h1)::before {
+  content: "";
   display: block;
+  float: right;
   width: 150px;
-  height: auto;
+  height: 150px;
+  margin: 0.25rem 0 1rem 1.75rem;
+  background: url("images/headshot.jpg") center / cover no-repeat;
   border-radius: 6px;
 }
 
@@ -173,12 +176,11 @@ body {
   .markdown-body { padding: 2.5rem 1.25rem 3.5rem; }
 
   /* Stack the headshot above the name instead of floating it. */
-  .markdown-body > p:first-child {
+  .markdown-body .markdown-heading:has(h1)::before {
     float: none;
-    margin: 0 0 1.25rem;
-  }
-  .markdown-body > p:first-child img {
     width: 120px;
+    height: 120px;
+    margin: 0 0 1rem;
   }
 
   .markdown-body h1 { font-size: 1.7rem; }

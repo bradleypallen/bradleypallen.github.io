@@ -18,7 +18,7 @@ Currently working on:
 
 - structured human–LLM dialogue protocols for collaborative knowledge base construction
 - bilateral modal logics for reasoning about LLM beliefs
-- a systematic comparison of knowledge engineering with the metaphilosophical methodology of conceptual engineering
+- methodologies for probing LLM endorsement of material inferential rules
 
 ## Background
 

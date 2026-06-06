@@ -127,6 +127,22 @@ body {
   margin-top: 1rem;
 }
 
+/* Plain prose list items (e.g. Research "currently working on") get a bullet marker
+   and normal indent. Reference items keep the hanging indent and stay marker-less —
+   Publications items carry a <strong> title, Talks items carry an <img> thumbnail. */
+.markdown-body li:not(:has(strong)):not(:has(img)) {
+  position: relative;
+  padding-left: 1.3rem;
+  text-indent: 0;
+  margin-bottom: 0.4rem;
+}
+.markdown-body li:not(:has(strong)):not(:has(img))::before {
+  content: "•";
+  position: absolute;
+  left: 0.1rem;
+  color: var(--faint);
+}
+
 /* List items that carry a thumbnail (Talks & Media): float the thumbnail left and
    let the title/description/links wrap beside it. (Flexbox can't be used here — GitHub
    strips wrapper tags, so the inline title/text/links would each become separate flex

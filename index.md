@@ -6,9 +6,23 @@ Researcher, Intelligent Data Engineering Lab (INDE Lab), University of Amsterdam
 
 ## About
 
-My research addresses the *implementation problem* in knowledge engineering: translating expert knowledge expressed in natural language into the formal representations that organizations and communities adopt for automated reasoning. The goal is to let domain experts build and maintain knowledge-based systems in natural language directly, without depending on knowledge engineers as intermediaries. I have shown that large language models can use natural-language definitions of concepts and roles to evaluate knowledge graphs, articulate rationales that surface factual and metalinguistic errors, and self-report bilateral doxastic states that enable sound and complete paraconsistent reasoning even when their beliefs are inconsistent. My ongoing work extends this toward structured human–LLM dialogue protocols for collaborative knowledge base construction, bilateral modal logics for reasoning about LLM beliefs, and a systematic comparison of knowledge engineering with the metaphilosophical methodology of conceptual engineering.
+I work on knowledge engineering in the era of large language models. My research asks a practical question: can domain experts build and maintain knowledge-based systems directly, in natural language, without depending on specialist knowledge engineers as intermediaries? I'm a researcher in the Intelligent Data Engineering Lab (INDE Lab) at the University of Amsterdam, where I completed my PhD in 2026 after four decades in industry.
 
-Before returning to research at the University of Amsterdam, I spent four decades in industry. I was Chief Architect at Elsevier (where I was also a Vice President in Elsevier Labs); founder and CTO of Siderean, TriVida, and Limbex (maker of WebCompass); and, beginning in the 1980s, one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART development environment. I received my PhD in Computer Science from the University of Amsterdam in April 2026, and I hold a BS in Applied Mathematics/Computer Science from Carnegie Mellon University.
+## Research
+
+My work addresses the implementation problem in knowledge engineering: translating expert knowledge expressed in natural language into the formal representations that organizations and communities adopt for automated reasoning.
+
+I've shown that large language models can use natural-language definitions of concepts and roles to evaluate knowledge graphs, articulate rationales that surface factual and metalinguistic errors, and self-report bilateral doxastic states that enable sound and complete paraconsistent reasoning even when their beliefs are inconsistent.
+
+Currently working on:
+
+- structured human–LLM dialogue protocols for collaborative knowledge base construction
+- bilateral modal logics for reasoning about LLM beliefs
+- a systematic comparison of knowledge engineering with the metaphilosophical methodology of conceptual engineering
+
+## Background
+
+Before returning to research, I spent four decades in industry. I began my career as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. Beginning in the 1980s, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert systems development environment. I went on to found and serve as CTO of Siderean, TriVida, and Limbex, and was Chief Architect at Elsevier, where I also led Elsevier Labs. I hold a PhD in Computer Science from the University of Amsterdam (2026) and a BS in Applied Mathematics/Computer Science from Carnegie Mellon University.
 
 ## Recent Talks & Media
 

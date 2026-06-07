@@ -14,7 +14,7 @@ I treat knowledge engineering as *explicitation*: making expert practice explici
 
 My recent work shows that large language models can do two things that make such accountability tractable. They can evaluate knowledge graphs against plain-language definitions and give reasons for their judgments — surfacing factual errors and subtler disagreements about word meaning, laid out where operators can inspect and contest them. And they can report their internal beliefs in a structured way, even when those beliefs conflict — letting operators see what a system is committed to and reason soundly with it despite the inconsistency.
 
-I am currently working on structured human–LLM dialogue protocols for collaborative knowledge base construction, bilateral modal logics for reasoning about LLM doxastic states, and methodologies for probing LLM endorsement of material inferential rules.
+I'm currently working on three fronts: structured human–LLM dialogue protocols for building knowledge bases collaboratively, modal logics for reasoning about what LLMs believe, and methods for probing which inferential rules an LLM actually endorses.
 
 ## Recent Talks & Media
 

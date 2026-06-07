@@ -6,7 +6,7 @@ Researcher, Intelligent Data Engineering Lab (INDE Lab), Informatics Institute, 
 
 ## Background
 
-I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. In 1984, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert system development environment. I went on to serve as Founder and CTO of three startups (Limbex, TriVida, and Siderean) and as Chief Architect at Elsevier. After forty years in industry, I have returned to an academic research role at the University of Amsterdam's Intelligent Data Engineering Lab (INDE Lab). I hold a PhD in Computer Science from the University of Amsterdam (2026) and a BS in Applied Mathematics (Computer Science) from Carnegie Mellon University (1982).
+I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. In 1984, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert system development environment. I went on to serve as Founder and CTO of three startups (Limbex, TriVida, and Siderean) and as Chief Architect at Elsevier. After forty years in industry, I have returned to academic research at the University of Amsterdam's Intelligent Data Engineering Lab (INDE Lab). I hold a PhD in Computer Science from the University of Amsterdam (2026) and a BS in Applied Mathematics (Computer Science) from Carnegie Mellon University (1982).
 
 ## Research
 

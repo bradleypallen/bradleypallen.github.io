@@ -1,12 +1,12 @@
 # Bradley P. Allen
 
-Researcher, Intelligent Data Engineering Lab (INDE Lab), Informatics Institute, University of Amsterdam
+Researcher, [Intelligent Data Engineering Lab (INDE Lab)](https://indelab.org/), Informatics Institute, University of Amsterdam
 
 [Email](mailto:b.p.allen@uva.nl) · [CV](resources/Bradley_Allen_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ) · [ORCID](https://orcid.org/0000-0003-0216-3930) · [PhilPapers](https://philpeople.org/profiles/bradley-allen) · [GitHub](https://github.com/bradleypallen/) · [LinkedIn](https://www.linkedin.com/in/bpallen)
 
 ## Background
 
-I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. In 1984, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert system development environment. I went on to serve as Founder and CTO of three startups (Limbex, TriVida, and Siderean) and as Chief Architect at Elsevier. After forty years in industry, I have returned to academic research at the University of Amsterdam's Intelligent Data Engineering Lab (INDE Lab). I hold a PhD in Computer Science from the University of Amsterdam and a BS in Applied Mathematics (Computer Science) from Carnegie Mellon University.
+I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. In 1984, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert system development environment. I went on to serve as Founder and CTO of three startups (Limbex, TriVida, and Siderean) and as Chief Architect at Elsevier. After forty years in industry, I have returned to academic research at the University of Amsterdam's INDE Lab. I hold a PhD in Computer Science from the University of Amsterdam and a BS in Applied Mathematics (Computer Science) from Carnegie Mellon University.
 
 ## Research
 

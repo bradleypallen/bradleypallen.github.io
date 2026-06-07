@@ -16,7 +16,7 @@ My recent work shows that large language models can do two things that make such
 
 This work continues on three fronts: structured human–LLM dialogue protocols for building knowledge bases collaboratively, modal logics for reasoning about what LLMs believe, and methods for probing which inferential rules an LLM actually endorses.
 
-## Recent Talks & Media
+## Talks & Media
 
 - [![Weaviate Podcast interview](resources/images/thumbs/weaviate.jpg)](https://www.youtube.com/watch?v=xY_SqvhArNQ) **Knowledge engineering with large language models** — interview, Weaviate Podcast #139, 1 June 2026. [Video](https://www.youtube.com/watch?v=xY_SqvhArNQ)
 - [![PhD thesis defense layman's talk](resources/images/thumbs/defence.jpg)](https://www.youtube.com/watch?v=PXXw8jSE6I0) **PhD thesis defense layman's talk** — University of Amsterdam, 30 April 2026. [Video](https://www.youtube.com/watch?v=PXXw8jSE6I0) · [Slides](resources/Allen_PhD_Defence_Laymans_Talk.pdf)

@@ -51,8 +51,15 @@ def generate_index_html():
     if github_token:
         headers["Authorization"] = f"token {github_token}"
 
-    last_updated = _format_last_updated()
-    markdown = Path("index.md").read_text().replace("{{LAST_UPDATED}}", last_updated)
+    today = date.today()
+    last_updated = _format_last_updated(today)
+    year = str(today.year)
+    markdown = (
+        Path("index.md")
+        .read_text()
+        .replace("{{LAST_UPDATED}}", last_updated)
+        .replace("{{YEAR}}", year)
+    )
     data = dumps({"text": markdown})
     response = post("https://api.github.com/markdown", headers=headers, data=data)
 
@@ -62,7 +69,7 @@ def generate_index_html():
         exit(1)
 
     html = f"{PREFIX}\n{response.text}\n{SUFFIX}"
-    print(f"Stamped 'Last updated {last_updated}'.")
+    print(f"Stamped 'Copyright © {year} … Last updated {last_updated}'.")
     Path("index.html").write_text(html)
 
 

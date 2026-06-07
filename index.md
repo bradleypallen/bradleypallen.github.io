@@ -14,7 +14,7 @@ I argue that knowledge engineering is *explicitation*: making the practice of a 
 
 My recent work shows that large language models can do two things that make such accountability tractable. They can [evaluate knowledge graphs against plain-language definitions and give reasons for their judgments](https://doi.org/10.1007/978-3-032-10073-3_1) — [surfacing factual errors](https://doi.org/10.1007/978-3-031-78952-6_2) and subtler [disagreements about word meaning](https://ceur-ws.org/Vol-3953/356.pdf), laid out where people can inspect and contest them. And they can report their internal beliefs in a structured way, even when those beliefs conflict — [letting people see what they are committed to and reason soundly despite the inconsistency](https://arxiv.org/pdf/2507.09751).
 
-This work continues on three fronts: structured human–LLM dialogue protocols for building knowledge bases collaboratively, modal logics for reasoning about what LLMs believe, and methods for probing which inferential rules an LLM actually endorses.
+This work continues on three fronts: structured human–LLM dialogue protocols for building knowledge bases collaboratively, modal and substructural logics for reasoning about what LLMs believe, and methods for probing which inferential rules an LLM actually endorses. Taken together, this points toward a knowledge engineering recast as human–LLM dialogue — one that builds on the growing capabilities of LLMs yet maintains human accountability for the outcomes.
 
 ## Talks & Media
 

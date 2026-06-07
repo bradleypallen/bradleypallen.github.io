@@ -186,11 +186,6 @@ body {
   color: var(--faint);
   margin-bottom: 0;
 }
-.markdown-body .last-updated {
-  font-size: 0.85rem;
-  color: var(--faint);
-  margin: 0.25rem 0 0;
-}
 
 /* ===== Responsive ===== */
 @media (max-width: 640px) {

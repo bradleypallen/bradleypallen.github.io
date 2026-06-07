@@ -29,8 +29,7 @@ PREFIX = """<!DOCTYPE html>
 <body>
 <article class="markdown-body">
 """
-SUFFIX_TEMPLATE = """
-<p class="last-updated"><em>Last updated {last_updated}.</em></p>
+SUFFIX = """
 </article>
 </body>
 </html>
@@ -52,7 +51,8 @@ def generate_index_html():
     if github_token:
         headers["Authorization"] = f"token {github_token}"
 
-    markdown = Path("index.md").read_text()
+    last_updated = _format_last_updated()
+    markdown = Path("index.md").read_text().replace("{{LAST_UPDATED}}", last_updated)
     data = dumps({"text": markdown})
     response = post("https://api.github.com/markdown", headers=headers, data=data)
 
@@ -61,9 +61,8 @@ def generate_index_html():
         print(response.text)
         exit(1)
 
-    suffix = SUFFIX_TEMPLATE.format(last_updated=_format_last_updated())
-    html = f"{PREFIX}\n{response.text}\n{suffix}"
-    print(f"Stamped 'Last updated {_format_last_updated()}'.")
+    html = f"{PREFIX}\n{response.text}\n{SUFFIX}"
+    print(f"Stamped 'Last updated {last_updated}'.")
     Path("index.html").write_text(html)
 
 

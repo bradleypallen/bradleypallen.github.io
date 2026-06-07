@@ -39,4 +39,4 @@ This work continues on three fronts: structured human–LLM dialogue protocols f
 
 ---
 
-*Copyright © 2026 Bradley P. Allen.*
+*Copyright © 2026 Bradley P. Allen. Last updated {{LAST_UPDATED}}.*

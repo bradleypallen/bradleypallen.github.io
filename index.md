@@ -14,11 +14,7 @@ My work treats knowledge engineering as *explicitation*: making expert practice 
 
 In my work I've shown that large language models can use natural-language definitions of concepts and roles to evaluate knowledge graphs, articulate rationales that surface factual and metalinguistic errors, and self-report bilateral doxastic states that enable sound and complete paraconsistent reasoning even when their beliefs are inconsistent.
 
-Currently working on:
-
-- structured human–LLM dialogue protocols for collaborative knowledge base construction
-- bilateral modal logics for reasoning about LLM beliefs
-- methodologies for probing LLM endorsement of material inferential rules
+I am currently working on structured human–LLM dialogue protocols for collaborative knowledge base construction, bilateral modal logics for reasoning about LLM doxastic states, and methodologies for probing LLM endorsement of material inferential rules.
 
 ## Recent Talks & Media
 

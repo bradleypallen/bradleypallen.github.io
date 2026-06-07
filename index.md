@@ -10,7 +10,7 @@ I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon Uni
 
 ## Research
 
-I argue that knowledge engineering is *explicitation*: making the practice of a community of experts explicit, so that it can be reasoned with, evaluated, and answered for. The last of these has been the hard part, a constant problem from the rule-based systems of the 1980s to today's large language models: how do we build AI applications such that we can be accountable for their assertions?
+I argue that knowledge engineering is *explicitation*: making the practice of a community of experts explicit, so that it can be reasoned with, evaluated, and answered for. The last of these has been the hard part, a constant problem from the rule-based systems of the 1980s to today's large language models: how do we build AI applications such that we can be accountable for their commitments?
 
 My recent work shows that large language models can do two things that make such accountability tractable. They can evaluate knowledge graphs against plain-language definitions and give reasons for their judgments — surfacing factual errors and subtler disagreements about word meaning, laid out where people can inspect and contest them. And they can report their internal beliefs in a structured way, even when those beliefs conflict — letting people see what a system is committed to and reason soundly with it despite the inconsistency.
 

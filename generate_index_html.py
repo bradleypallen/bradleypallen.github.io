@@ -4,6 +4,7 @@
 from requests import post
 from json import dumps
 from pathlib import Path
+from datetime import date
 
 PREFIX = """<!DOCTYPE html>
 <html lang="en">
@@ -28,11 +29,17 @@ PREFIX = """<!DOCTYPE html>
 <body>
 <article class="markdown-body">
 """
-SUFFIX = """
+SUFFIX_TEMPLATE = """
+<p class="last-updated"><em>Last updated {last_updated}.</em></p>
 </article>
 </body>
 </html>
 """
+
+
+def _format_last_updated(today=None):
+    today = today or date.today()
+    return today.strftime("%-d %B %Y")
 
 
 def generate_index_html():
@@ -54,7 +61,9 @@ def generate_index_html():
         print(response.text)
         exit(1)
 
-    html = f"{PREFIX}\n{response.text}\n{SUFFIX}"
+    suffix = SUFFIX_TEMPLATE.format(last_updated=_format_last_updated())
+    html = f"{PREFIX}\n{response.text}\n{suffix}"
+    print(f"Stamped 'Last updated {_format_last_updated()}'.")
     Path("index.html").write_text(html)
 
 

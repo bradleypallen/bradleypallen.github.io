@@ -12,7 +12,7 @@ I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon Uni
 
 My work treats knowledge engineering as *explicitation*: making expert practice explicit, in forms that can be reasoned with, evaluated, and answered for. This recasts the problems I have worked on my entire career — from the rule-based expert systems of the 1980s to the large language models of today — as one question: how to deploy AI applications whose assertions carry genuine commitments, for which the people who manage them can be accountable.
 
-I've shown that large language models can use natural-language definitions of concepts and roles to evaluate knowledge graphs, articulate rationales that surface factual and metalinguistic errors, and self-report bilateral doxastic states that enable sound and complete paraconsistent reasoning even when their beliefs are inconsistent.
+In my work I've shown that large language models can use natural-language definitions of concepts and roles to evaluate knowledge graphs, articulate rationales that surface factual and metalinguistic errors, and self-report bilateral doxastic states that enable sound and complete paraconsistent reasoning even when their beliefs are inconsistent.
 
 Currently working on:
 

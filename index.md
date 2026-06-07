@@ -37,7 +37,7 @@ Before returning to research, I spent four decades in industry. I began my caree
 ## Selected Publications
 
 - [**Neurosymbolic Knowledge Engineering with Natural Language.**](https://dare.uva.nl/personal/search?identifier=30baa328-ff48-47de-bb9c-7787ee2f7e34) Bradley P. Allen. PhD thesis, University of Amsterdam, 2026.
-- [**Conceptual Engineering Using Large Language Models.**](https://arxiv.org/abs/2312.03749) Bradley P. Allen. In Vincent C. Müller, Aliya R. Dewey, Leonard Dung, and Guido Löhr, editors, *Philosophy of Artificial Intelligence: The State of the Art*, pages 1–22. Springer Nature Switzerland, 2026.
+- [**Conceptual Engineering Using Large Language Models.**](https://doi.org/10.1007/978-3-032-10073-3_1) Bradley P. Allen. In Vincent C. Müller, Leonard Dung, Guido Löhr, and Aliya Rumana, editors, *Philosophy of Artificial Intelligence*, Synthese Library, vol. 533. Springer, Cham, 2026.
 - [**Elenchus: Generating Knowledge Bases from Prover–Skeptic Dialogues.**](https://arxiv.org/abs/2603.06974) Bradley P. Allen. arXiv:2603.06974, 2026.
 - [**Sound and Complete Neurosymbolic Reasoning with LLM-Grounded Interpretations.**](https://arxiv.org/pdf/2507.09751) Bradley P. Allen, Prateek Chhikara, Thomas Macaulay Ferguson, Filip Ilievski, and Paul Groth. *Proceedings of the 19th International Conference on Neurosymbolic Learning and Reasoning (NeSy 2025)*, PMLR 284:392–419, 2025.
 - [**A Benchmark for the Detection of Metalinguistic Disagreements between LLMs and Knowledge Graphs.**](https://ceur-ws.org/Vol-3953/356.pdf) Bradley P. Allen and Paul Groth. *Special Session on Harmonising Generative AI and Semantic Web Technologies (HGAIS 2024)*, CEUR Workshop Proceedings 3953, 2025.

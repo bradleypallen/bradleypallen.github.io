@@ -39,8 +39,6 @@ I'm currently working on three fronts: structured human–LLM dialogue protocols
 
 *1,340 citations · h-index 15 · i10-index 16 (Google Scholar, June 2026).*
 
-[Full publication list on Google Scholar →](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ)
-
 ---
 
 *Copyright © 2026 Bradley P. Allen.*

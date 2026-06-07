@@ -66,6 +66,8 @@ body {
 }
 
 .markdown-body strong { font-weight: 600; color: var(--text); }
+/* Bold text inside a link (e.g. linked publication titles) takes the link color. */
+.markdown-body a strong { color: inherit; }
 .markdown-body em { font-style: italic; color: var(--muted); }
 
 /* ===== Links ===== */

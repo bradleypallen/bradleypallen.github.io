@@ -1,6 +1,6 @@
 # Bradley P. Allen
 
-Researcher, Intelligent Data Engineering Lab (INDE Lab), University of Amsterdam
+Researcher, Intelligent Data Engineering Lab (INDE Lab), Informatics Institute, University of Amsterdam
 
 [Email](mailto:b.p.allen@uva.nl) · [CV](resources/Bradley_Allen_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ) · [ORCID](https://orcid.org/0000-0003-0216-3930) · [PhilPapers](https://philpeople.org/profiles/bradley-allen) · [GitHub](https://github.com/bradleypallen/) · [LinkedIn](https://www.linkedin.com/in/bpallen)
 

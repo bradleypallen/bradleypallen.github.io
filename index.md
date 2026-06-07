@@ -37,8 +37,6 @@ This work continues on three fronts: structured human–LLM dialogue protocols f
 - [**Case-Based Reasoning: Business Applications.**](https://doi.org/10.1145/175247.175250) Bradley P. Allen. *Communications of the ACM*, 37(3):40–43, 1994.
 - [**Job-Shop Scheduling: An Investigation in Constraint-Directed Reasoning.**](https://cdn.aaai.org/AAAI/1982/AAAI82-037.pdf) Mark S. Fox, Bradley P. Allen, and Gary Strohm. *AAAI*, pages 155–158, 1982.
 
-*1,340 citations · h-index 15 · i10-index 16 (Google Scholar, June 2026).*
-
 ---
 
 *Copyright © 2026 Bradley P. Allen.*

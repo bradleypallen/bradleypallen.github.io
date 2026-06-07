@@ -4,9 +4,9 @@ Researcher, Intelligent Data Engineering Lab (INDE Lab), Informatics Institute, 
 
 [Email](mailto:b.p.allen@uva.nl) · [CV](resources/Bradley_Allen_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=cdQ_HrAAAAAJ) · [ORCID](https://orcid.org/0000-0003-0216-3930) · [PhilPapers](https://philpeople.org/profiles/bradley-allen) · [GitHub](https://github.com/bradleypallen/) · [LinkedIn](https://www.linkedin.com/in/bpallen)
 
-## About
+## Background
 
-I work on knowledge engineering in the era of large language models. My research asks a practical question: can domain experts build and maintain knowledge-based systems directly, in natural language, without depending on specialist knowledge engineers as intermediaries? I'm a researcher in the Intelligent Data Engineering Lab (INDE Lab) at the University of Amsterdam, where I completed my PhD in 2026 after four decades in industry.
+I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. In 1984, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert system development environment. I went on to serve as Founder and CTO of three startups (Limbex, TriVida, and Siderean) and as Chief Architect at Elsevier. After forty years in industry, I returned to an academic research role at the University of Amsterdam's Intelligent Data Engineering Lab (INDE Lab). I hold a PhD in Computer Science from the University of Amsterdam (2026) and a BS in Applied Mathematics (Computer Science) from Carnegie Mellon University (1982).
 
 ## Research
 
@@ -19,10 +19,6 @@ Currently working on:
 - structured human–LLM dialogue protocols for collaborative knowledge base construction
 - bilateral modal logics for reasoning about LLM beliefs
 - methodologies for probing LLM endorsement of material inferential rules
-
-## Background
-
-I began my career in 1982 as a Senior Research Programmer at Carnegie Mellon University's Robotics Institute. In 1984, I became one of the first knowledge engineers of the expert-systems era at Inference Corporation, where I helped build the ART expert system development environment. I went on to serve as Founder and CTO of three startups (Limbex, TriVida, and Siderean) and as Chief Architect at Elsevier. After forty years in industry, I returned to an academic research role at the University of Amsterdam's Intelligent Data Engineering Lab (INDE Lab). I hold a PhD in Computer Science from the University of Amsterdam (2026) and a BS in Applied Mathematics (Computer Science) from Carnegie Mellon University (1982).
 
 ## Recent Talks & Media
 

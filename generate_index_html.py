@@ -16,15 +16,9 @@ PREFIX = """<!DOCTYPE html>
 <meta name="description" content="Bradley P. Allen — researcher, INDE Lab, University of Amsterdam. Knowledge engineering in the era of large language models.">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="resources/styles.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X60V83RS7W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X60V83RS7W');
-</script>
+<!-- GoatCounter — lightweight, cookieless analytics; no consent banner needed -->
+<script data-goatcounter="https://bradleypallen.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <article class="markdown-body">

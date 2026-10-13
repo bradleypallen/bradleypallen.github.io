@@ -18,6 +18,8 @@ This work continues on three fronts: structured human–LLM dialogue protocols f
 
 ## Talks & Media
 
+- [![Beyond the Chatbot: AI as a Scientific Collaborator](resources/images/thumbs/uva_sloan.jpg)](https://ivi.uva.nl/content/news/2026/10/beyond-the-chatbot-ai-as-a-scientific-collaborator.html) **Beyond the Chatbot: AI as a Scientific Collaborator** — University of Amsterdam Informatics Institute news, 1 October 2026. [Article](https://ivi.uva.nl/content/news/2026/10/beyond-the-chatbot-ai-as-a-scientific-collaborator.html)
+- [![Answerable at Scale title slide](resources/images/thumbs/elsevier.jpg)](resources/Allen_Elsevier_2026_slides.pdf) **Answerable at Scale: Knowledge Engineering with a Metrology of Meaning** — Elsevier Data Academy / Lectures in Innovative Technologies, 18 August 2026. [Slides](resources/Allen_Elsevier_2026_slides.pdf)
 - [![Weaviate Podcast interview](resources/images/thumbs/weaviate.jpg)](https://www.youtube.com/watch?v=xY_SqvhArNQ) **Knowledge engineering with large language models** — interview, Weaviate Podcast #139, 1 June 2026. [Video](https://www.youtube.com/watch?v=xY_SqvhArNQ)
 - [![PhD thesis defense layman's talk](resources/images/thumbs/defence.jpg)](https://www.youtube.com/watch?v=PXXw8jSE6I0) **PhD thesis defense layman's talk** — University of Amsterdam, 30 April 2026. [Video](https://www.youtube.com/watch?v=PXXw8jSE6I0) · [Slides](resources/Allen_PhD_Defence_Laymans_Talk.pdf)
 - [![Elenchus talk at CSAI@VU](resources/images/thumbs/elenchus.jpg)](resources/Allen_Elenchus_VU_talk.pdf) **Elenchus: Generating Knowledge Bases from Prover–Skeptic Dialogues** — invited talk, Commonsense AI group, Vrije Universiteit Amsterdam, 29 April 2026. [Slides](resources/Allen_Elenchus_VU_talk.pdf)

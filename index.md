@@ -18,6 +18,7 @@ These are initial steps towards *a metrology for large language models*: how to 
 
 ## Talks & Media
 
+- [![Elenchus: A Dialectical AI Assistant for Traceable Ontology Engineering](resources/images/thumbs/elenchus_aiaa4ke.jpg)](resources/Allen_Elenchus_AIAA4KE_2026_slides.pdf) **Elenchus: A Dialectical AI Assistant for Traceable Ontology Engineering** — 1st Workshop on AI-Assisted Approaches to Knowledge Engineering (AIAA4KE), ISWC 2026, Bari, Italy, 26 October 2026. [Slides](resources/Allen_Elenchus_AIAA4KE_2026_slides.pdf)
 - [![Beyond the Chatbot: AI as a Scientific Collaborator](resources/images/thumbs/uva_sloan.jpg)](https://ivi.uva.nl/content/news/2026/10/beyond-the-chatbot-ai-as-a-scientific-collaborator.html) **Beyond the Chatbot: AI as a Scientific Collaborator** — University of Amsterdam Informatics Institute news, 1 October 2026. [Article](https://ivi.uva.nl/content/news/2026/10/beyond-the-chatbot-ai-as-a-scientific-collaborator.html)
 - [![Answerable at Scale title slide](resources/images/thumbs/elsevier.jpg)](resources/Allen_Elsevier_2026_slides.pdf) **Answerable at Scale: Knowledge Engineering with a Metrology of Meaning** — Elsevier Data Academy / Lectures in Innovative Technologies, 18 August 2026. [Slides](resources/Allen_Elsevier_2026_slides.pdf)
 - [![Weaviate Podcast interview](resources/images/thumbs/weaviate.jpg)](https://www.youtube.com/watch?v=xY_SqvhArNQ) **Knowledge engineering with large language models** — interview, Weaviate Podcast #139, 1 June 2026. [Video](https://www.youtube.com/watch?v=xY_SqvhArNQ)
